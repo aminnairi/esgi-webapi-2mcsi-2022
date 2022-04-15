@@ -47,3 +47,4 @@ CREATE TABLE todos(
 ) ENGINE = InnoDB;
 
 INSERT INTO users(name, username, email, phone, website) VALUES('NAIRI', 'Amin', 'anairi@esgi.fr', '0102030405', 'https://github.com/aminnairi');
+INSERT INTO posts(userId, title, body) VALUES(1, 'Titre', 'Contenu');
