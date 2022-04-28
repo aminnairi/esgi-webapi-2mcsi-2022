@@ -29,8 +29,7 @@ git pull
 
 ## Contrôles Continus
 
-- [ ] Premier contrôle continu (à prévoir)
-- [ ] Deuxième contrôle continu (à prévoir)
+- [X] Premier contrôle continu
 
 ## Références
 
@@ -54,6 +53,6 @@ Utiliser la fonction `jsonResponse` dans tous les controlleurs.
 - [X] Méthodes HTTP
 - [X] Routeur
 - [X] Contrôleur
-- [ ] Modèle
-- [ ] PHP Data Object
+- [X] Modèle
+- [X] PHP Data Object
 - [ ] Authentification
