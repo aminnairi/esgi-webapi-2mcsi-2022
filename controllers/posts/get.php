@@ -13,4 +13,3 @@ try {
     $errorMessage = $exception->getMessage();
     jsonResponse(500, [], ["success" => false, "error" => "Error while trying to access the dabtabase: $errorMessage"]);
 }
-

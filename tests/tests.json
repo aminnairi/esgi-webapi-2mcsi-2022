@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "8b16f1c7-1f68-4de2-b8c2-04c217bbea8d",
+		"name": "esgi-webapi-2mcsi-2022",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "fetch all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2mcsi-2022/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2mcsi-2022",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Quentin HERMITEAU\",\n    \"username\": \"qhermiteau\",\n    \"email\": \"qhermiteau@esgi.fr\",\n    \"phone\": \"0102030405\",\n    \"website\": \"quentinhermiteau.github.io\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2mcsi-2022/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2mcsi-2022",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "posts",
+			"item": []
+		}
+	]
+}

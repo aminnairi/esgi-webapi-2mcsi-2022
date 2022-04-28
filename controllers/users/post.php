@@ -4,12 +4,15 @@ include __DIR__ . "/../../functions/json-response.php";
 include __DIR__ . "/../../models/users/create-user.php";
 
 try {
+    $rawBody = file_get_contents("php://input");
+    $body = json_decode($rawBody);
+    
     createUser([
-        "name" => "Amin NAIRI",
-        "username" => "anairi",
-        "email" => "anairi@esgi.fr",
-        "phone" => "0102030405",
-        "website" => "https://github.com/aminnairi"
+        "name" => $body->name,
+        "username" => $body->username,
+        "email" => $body->email,
+        "phone" => $body->phone,
+        "website" => $body->website
     ]);
 
     jsonResponse(201, [], ["success" => true]);
