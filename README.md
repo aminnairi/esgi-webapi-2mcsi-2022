@@ -5,8 +5,9 @@
 - [X] Séance 1 18/03/2022
 - [X] Séance 2 31/03/2022
 - [X] Séance 3 08/04/2022
-- [ ] Séance 4
-- [ ] Séance 5
+- [X] Séance 4 28/04/2022
+- [ ] Séance 5 29/04/2022 
+- [ ] Séance 6
 
 ## Contrôles continus
 
