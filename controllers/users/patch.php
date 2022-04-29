@@ -1,15 +1,13 @@
 <?php
 
 include __DIR__ . "/../../functions/json-response.php";
+include __DIR__ . "/../../functions/get-json-body.php";
 include __DIR__ . "/../../models/users/update-user.php";
 
 try {
-    updateUser(1, [
-        "name" => "Anwar NAIRI",
-        "username" => "anairi",
-        "email" => "anairi@esgi.fr"
-    ]);
+    $body = getJsonBody(true);
 
+    updateUser($body);
     jsonResponse(201, [], ["success" => true]);
 } catch (PDOException $exception) {
     $errorMessage = $exception->getMessage();

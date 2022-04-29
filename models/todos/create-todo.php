@@ -2,8 +2,8 @@
 
 include __DIR__ . "/../../functions/get-database-connection.php";
 
-function createPost($columns) {
+function createTodo($columns) {
     $databaseConnection = getDatabaseConnection();
-    $query = $databaseConnection->prepare("INSERT INTO posts(title, body, userId) VALUES(:title, :body, :userId)");
+    $query = $databaseConnection->prepare("INSERT INTO todos(title, completed, userId) VALUES(:title, :completed, :userId)");
     $query->execute($columns);
 }
