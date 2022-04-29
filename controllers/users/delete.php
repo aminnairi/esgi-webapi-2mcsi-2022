@@ -2,9 +2,12 @@
 
 include __DIR__ . "/../../functions/json-response.php";
 include __DIR__ . "/../../models/users/delete-user.php";
+include __DIR__ . "/../../functions/get-json-body.php";
 
 try {
-    deleteUser(1);
+    $body = getJsonBody();
+
+    deleteUser($body->id);
     jsonResponse(201, [], ["success" => true]);
 } catch (PDOException $exception) {
     $errorMessage = $exception->getMessage();
