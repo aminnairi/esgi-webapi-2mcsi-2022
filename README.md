@@ -37,7 +37,7 @@ N/A.
 
 ## Travail
 
-Utiliser la fonction `jsonResponse` dans tous les controlleurs.
+- Faire fonctionner toutes les entités sur Postman (GET, POST)
 
 ## Todo
 
