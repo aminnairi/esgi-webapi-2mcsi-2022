@@ -2,11 +2,11 @@
 
 include __DIR__ . "/../../functions/json-response.php";
 include __DIR__ . "/../../models/users/create-user.php";
+include __DIR__ . "/../../functions/get-json-body.php";
 
 try {
-    $rawBody = file_get_contents("php://input");
-    $body = json_decode($rawBody);
-    
+    $body = getJsonBody();
+
     createUser([
         "name" => $body->name,
         "username" => $body->username,
